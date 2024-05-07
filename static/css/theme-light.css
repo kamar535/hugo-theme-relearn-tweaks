@@ -34,6 +34,8 @@
     --MAIN-TITLES-TEXT-color: rgba(16, 16, 16, 1);
     /* text color of h2-h6 titles and transparent box titles */
 
+    --TABLE-EVEN-ROW-BG-color: rgba(206, 205, 205, 0.3);
+
     /* adjusted to relearn-light chroma style */
     --CODE-BLOCK-color: rgba(39, 40, 34, 1);
     /* fallback text color of block code; should be adjusted to your selected chroma style */

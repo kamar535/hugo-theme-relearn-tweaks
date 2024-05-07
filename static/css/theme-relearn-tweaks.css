@@ -131,6 +131,36 @@ th[align="center"] {
     border-bottom: none;
 }
 
+
+table th, table td {
+    border: 1px solid #e1e4e5;
+
+}
+
+table th {
+    background-color: var(--MAIN-BG-color);
+    vertical-align: bottom;
+
+}
+
+th.upper-left-empty {
+    border-left: 1px solid var(--MAIN-BG-color);
+    border-top: 1px solid var(--MAIN-BG-color);
+}
+
+table tr.header-no-bottom-border th {
+    border-bottom: none !important;
+}
+
+tbody > tr:nth-child(even) > td {
+    background-color: var(--TABLE-EVEN-ROW-BG-color);
+}
+
+
+table.center td,
+table.center th {
+    text-align: center;
+}
 /**** SUB TITLE ****/
 
 h2.subtitle {
@@ -501,7 +531,7 @@ http: //www.audenaerde.org/csstricks.html#
 img.uu-full-logo {
     width: 0px !important;
     height: 0px !important;
-    padding: 190px 200px 0px 0px;
+    padding: 190px 200px 0px 0px !important; 
     background: var(--UU-FULL-LOGO);
     background-size: auto;
     margin-bottom: 3em;
