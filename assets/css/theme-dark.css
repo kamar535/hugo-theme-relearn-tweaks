@@ -4,9 +4,9 @@
    - set `markup.highlight.style` to a predefined style name in your config.toml
    - remove the following `@import` of the self-defined chroma stylesheet */
 
---CODE-theme: relearn-dark;
-
 :root {
+    --CODE-theme: relearn-dark; 
+
     --PRIMARY-color: #8451a1;
     /* brand primary color for logo bg etc */
     --SECONDARY-color: rgba(108, 140, 227, 1);

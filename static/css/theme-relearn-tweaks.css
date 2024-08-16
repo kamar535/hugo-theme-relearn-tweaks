@@ -1,5 +1,4 @@
-
---CODE-theme: variant-internal;
+@import "variant.css"; 
 
 :root {
     --MENU-WIDTH-M: 18.375rem;
