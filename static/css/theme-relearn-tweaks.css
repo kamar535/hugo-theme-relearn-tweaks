@@ -587,6 +587,7 @@ table.icon-list tr>td:first-child {
 
 #R-sidebar div.menu-page-title {
     flex-grow: 1;
+    line-height: 1.5;
 }
 
 .menu-post-icons {
@@ -636,4 +637,15 @@ table.icon-list tr>td:first-child {
     padding-bottom: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
+}
+
+
+#R-body figure > figcaption > h4 {
+    padding-top: 1em;
+    font-weight: 300;
+    color: var(--INTERNAL-MAIN-TEXT-color);
+    }
+
+#R-body a.lightbox-link:hover {
+    color: transparent;
 }
