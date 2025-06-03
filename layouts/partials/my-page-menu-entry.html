@@ -1,0 +1,42 @@
+ <div class="menu-entry"> 
+
+    <div class="menu-page-title">
+        {{- partial "menu-pre.html" . }}
+        {{ .title }}
+        {{ partial "menu-post.html" . }} 
+    </div>
+
+    <div class="menu-post-icons">
+
+        <div class="points">
+            {{ if .ctx.Params.points }}
+            {{ .ctx.Params.points }}
+            {{ else }} &nbsp;
+            {{ end }}
+        </div>
+
+        <div class="post-icons">
+            {{ if eq .ctx.Params.assignment "mandatory" }}
+            {{ .ctx.Site.Params.mandatoryIcon | safeHTML }}
+            {{ end }}
+        
+            {{ if eq .ctx.Params.assignment "higher-grade" }}
+            {{ .ctx.Site.Params.higherGradeIcon | safeHTML }}
+            {{ end }}
+
+            {{ if eq .ctx.Params.assignment "github" }}
+            {{ .ctx.Site.Params.githubIcon | safeHTML }}
+            {{ end }}
+        </div> 
+
+    </div> 
+
+    <div class="read-icon-spacer">
+       {{- if .url }}
+       {{ if .showvisitedlinks }}
+           <i class="fas fa-check read-icon"></i>
+       {{ end }} 
+       {{end }} 
+    </div>
+
+</div>
