@@ -10,29 +10,29 @@
             unsafe = true
 
 [outputs]
-  # home = ['html', 'rss', 'print']
-  # page = ['html', 'rss', 'print']
-  # section = ['html', 'rss', 'print']
-  home = ['html', 'rss']
-  page = ['html', 'rss']
-  section = ['html', 'rss']
+    # home = ['html', 'rss', 'print']
+    # page = ['html', 'rss', 'print']
+    # section = ['html', 'rss', 'print']
+    home = ['html', 'rss']
+    page = ['html', 'rss']
+    section = ['html', 'rss']
 
 [params]
-    languageCode = 'de-DE'  
+    languageCode = 'de-DE'
     languageName = 'Deutsch'
     themeVariant = ['dark', 'light']
 
     title = "Introduktion till datorer"
-    
+
     disableLandingPageButton = true
     collapsibleMenu = true
-    showVisitedLinks=true 
+    showVisitedLinks = true
     disableInlineCopyToClipBoard = true
     disableRootBreadcrumb = true
     # disableNextPrev = true
     editURL = 'https://github.com/McShelby/hugo-theme-relearn/edit/main/docs/content/${FilePath}'
     # additionalContentLanguage = []
-    disableLanguageSwitchingButton = true
+    # disableLanguageSwitchingButton = true
 
     githubIcon = "<i class='fab fa-github'></i>"
 
@@ -40,23 +40,23 @@
 
     higherGradeIcon = "<i class='fas fa-star'></i>"
 
-    sidebarheadermenus = []
+    # Changing the Theme variant switcher menu icon
+    #
+    # https://github.com/McShelby/hugo-theme-relearn/issues/1104
 
     [[params.sidebarfootermenus]]
         type = 'divider'
 
     [[params.sidebarfootermenus]]
+        identifier = 'footercontrols'
         type = 'custom'
 
-    [[params.sidebarfootermenus.elements]]
-      type = 'historyclearer'
+        [[params.sidebarfootermenus.elements]]
+            type = 'languageswitcher'
 
-    [[params.sidebarfootermenus.elements]]
-      type = 'variantswitcher'
+        [[params.sidebarfootermenus.elements]]
+            type = 'variantswitcher'
+            icon = 'droplet'
 
-
-   
-
-    [[params.sidebarmenus]]
-        type = 'page'
-
+        [[params.sidebarfootermenus.elements]]
+            type = 'historyclearer'

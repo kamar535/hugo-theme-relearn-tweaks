@@ -685,3 +685,9 @@ table.icon-list tr>td:first-child {
     color: transparent;
 }
 
+
+
+
+.R-shortcutmenu-footercontrols div.menu-control span {
+   width: 0.6rem;
+}
