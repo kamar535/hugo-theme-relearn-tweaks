@@ -1,5 +1,5 @@
-<a href="{{ .Site.Home.Permalink}}">
+<a href="{{ .Site.Home.Permalink}}/{{ $.Params.year}}">
     <div class="course">{{ T "Site-Title" }}</div>
-    <div class="semester">{{ $.Site.Params.year }}</div>
+    <div class="semester">{{ $.Params.year }}</div>
 </a>
 
